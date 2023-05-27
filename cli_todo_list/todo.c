@@ -28,6 +28,7 @@ int main(void)
   List to_do_list;
   char input_str[200];
   char c;
+  int i=0;
   to_do_list = make_list();
   while(1){
     printf("Press 1 to add to to-do-list \n");
@@ -42,6 +43,7 @@ int main(void)
       fgets(input_str,200,stdin);
       input_str[strlen(input_str) - 1] = '\0';
       insert(to_do_list,input_str);
+      i++;
     }
     else if(c == '2'){
       printf("Choose number to remove \n");
@@ -53,6 +55,8 @@ int main(void)
       print_list(to_do_list);
     }
     else{
+        while( delete_node(to_do_list,i-1) == 0 && i>0)
+            i--;
       exit(0);
     }
   }
@@ -95,7 +99,7 @@ int delete_node(List list, int node_num){
         prev = p_node;
         p_node = p_node->next;
       }
-      else{printf("error lmao");return 1;}
+      else{printf("error lmao \n"); return 1;}
       i++;
     }
     /* free node*/
