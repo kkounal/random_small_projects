@@ -1,6 +1,6 @@
 # Challenge #3 -easy
 
-Password generator, let's the user choose number of digits, if it contains capitals or symbols. Also can pass a file to it.
+Password generator, lets the user choose number of digits, if it contains capitals or symbols. Also can pass a file to it.
 
 To make it easier to pipe a file i printed info about usage to stderror instead of stdout but there might be a better solution. 
 
