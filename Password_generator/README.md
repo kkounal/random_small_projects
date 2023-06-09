@@ -6,4 +6,4 @@ To make it easier to pipe a file i printed info about usage to stderror instead 
 
 took ~35min but i think it's a bit better quality than the other two i have currently done 9/6/2023
 
-challenges id num:56
+Challenge id num:56
